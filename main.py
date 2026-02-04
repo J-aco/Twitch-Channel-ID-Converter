@@ -4,10 +4,7 @@ import json
 #Enter Channel ID to look up here
 CHANNEL_ID = '123456789'
 
-#Use below link to register an application with twitch to create "client id" and generate a "client secret"
-#https://dev.twitch.tv/console/apps/create
-#TIP: When creating the app- for Oauth redirect URL you can use: https://localhost
-
+#Enter Twitch Application details here - refer to readme for guide.
 client_id = 'Insert Client ID here'
 client_secret = 'Insert Secret here'
 
