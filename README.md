@@ -8,7 +8,6 @@ A simple Python script that looks up a **Twitch Channel ID** and returns the **c
 - No OAuth scopes are required
 - Access token is generated at runtime
 
----
 
 ## Requirements
 
@@ -22,8 +21,6 @@ Install dependencies:
 ```bash
 pip install requests
 ```
-
----
 
 ## Twitch API Setup
 
