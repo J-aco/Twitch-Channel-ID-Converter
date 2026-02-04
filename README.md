@@ -1,18 +1,19 @@
 # Twitch Channel ID to Channel Name Lookup
 
-A simple Python script that looks up a **Twitch Channel ID** and returns the **channel (broadcaster) name** using the official Twitch Helix API.
+A simple Python script that uses a **Twitch Channel ID** and returns the **Channel name** (Broadcaster Name)
 
 **Notes**:
-- Handles OAuth authentication (Client Credentials flow)
+- Requires [Twitch Dev App](#twitch-app-setup) for API
+- Handles OAuth (Client Credentials flow)
 - Uses the Twitch **Helix API** (Kraken is deprecated)
 - No OAuth scopes are required
-- Access token is generated at runtime
+- Access token is generated at runtime and isnt stored.
 
 
 ## Requirements
 
 - Python **3.7+**
-- A Twitch Developer application
+- [A Twitch Developer application](#twitch-app-setup)
 - Python package:
   - `requests`
 
@@ -22,7 +23,7 @@ Install dependencies:
 pip install requests
 ```
 
-## Twitch API Setup
+## Twitch App Setup
 
 1. Go to the Twitch Developer Console:
    https://dev.twitch.tv/console/apps/create
@@ -32,9 +33,9 @@ pip install requests
    - **OAuth Redirect URL**: https://localhost
    - **Category**: Other
 
-3. Copy the **Client ID**
+3. Copy the **Client ID** into the script
 
-4. Generate and copy the **Client Secret**
+4. Click "New Secret" and copy the **Client Secret** into the script
 
 ## Configuration
 
@@ -46,7 +47,10 @@ client_id = 'Insert Client ID here'
 client_secret = 'Insert Secret here'
 ```
 
-- `CHANNEL_ID`: Numeric Twitch broadcaster ID
-- `client_id`: Twitch application Client ID
-- `client_secret`: Twitch application Client Secret
+- `CHANNEL_ID`: Numeric Twitch broadcaster ID as a string
+- `client_id`: Alpha-numeric Client ID as a string
+- `client_secret`: Alpha-numeric Client Secret as a string
 
+# License
+
+MIT License
